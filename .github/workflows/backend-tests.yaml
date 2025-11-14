@@ -66,10 +66,24 @@ jobs:
           format: markdown
           output: both
 
-      - name: Add COverage PR Comment
+      - name: Add Coverage PR Comment
         uses: marocchino/sticky-pull-request-comment@v2
         if: github.event_name == 'pull_request'
         with:
           header: test-coverage
           recreate: true
           path: code-coverage-results.md
+
+      - name: Build and image from Dockerfile
+        run: docker build -t backend-app:latest .
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@0.33.1
+        with:
+          image-ref: backend-app:latest
+          format: "'table"
+          # exit-code: '1' # Fail the workflow if vulnerabilities are found.
+          exit-code: "0"
+          ignore-unfixed: true
+          vuln-type: "os,library"
+          severity: "CRITICAL,HIGH"
