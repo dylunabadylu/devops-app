@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/dylunabadylu/devops-app/compare/backend-v0.2.0...backend-v0.3.0) (2025-11-16)
+
+
+### Features
+
+* **frontend:** add automated image build on release ([#14](https://github.com/dylunabadylu/devops-app/issues/14)) ([f146bb8](https://github.com/dylunabadylu/devops-app/commit/f146bb84eed0e9fdfdb01625d9d08e74acfacdc3))
+
 ## [0.2.0](https://github.com/dylunabadylu/devops-app/compare/backend-v0.1.0...backend-v0.2.0) (2025-11-16)
 
 
