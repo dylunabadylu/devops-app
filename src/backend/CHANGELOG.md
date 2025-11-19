@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/dylunabadylu/study-app/compare/backend-v0.3.1...backend-v0.3.2) (2025-11-19)
+
+
+### Bug Fixes
+
+* **backend:** correct venv binary path in dockerfile ([#19](https://github.com/dylunabadylu/study-app/issues/19)) ([a0b15d2](https://github.com/dylunabadylu/study-app/commit/a0b15d2e21a0777c7d7c9026eb698b23bedd20b4))
+
 ## [0.3.1](https://github.com/dylunabadylu/devops-app/compare/backend-v0.3.0...backend-v0.3.1) (2025-11-16)
 
 
