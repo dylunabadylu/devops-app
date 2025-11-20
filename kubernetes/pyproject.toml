@@ -1,0 +1,6 @@
+[project]
+name = "kubernetes"
+version = "0.1.0"
+description = "Kubernetes utilities for local cluster setup and E2E tests"
+requires-python = ">=3.13"
+dependencies = ["requests>=2.32.5"]
